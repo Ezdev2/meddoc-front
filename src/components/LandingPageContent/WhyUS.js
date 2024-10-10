@@ -1,18 +1,25 @@
 import { Link } from "react-router-dom"
 import doctor from "../../assets/image/doctor.svg"
+import book from "../../assets/image/book.svg"
+import bottle from "../../assets/image/bottle.svg"
+import appointment from "../../assets/image/appointment.svg"
+import bg from "../../assets/illustration/bg.svg"
 const items = [
   {
     id: 1,
     title: 'Rendez-vous en ligne',
-    link: '/rendez-vous'
+    link: '/user/appointment',
+    img: appointment
   },
   {
     id: 2,
     title: 'Hippocamp E-learning',
+    img: book
   },
   {
     id: 3,
     title: 'Conseil santé',
+    img: bottle
   },
 ]
 
@@ -23,7 +30,7 @@ export default function Whyus() {
     <section id="why-us" class="why-us">
       <div className="grid lg:grid-cols-4 gap-4 mx-4 my-5 lg:p-16 justify-center ">
 
-        <div className="flex flex-col p-4 items-center bg-cyan-400 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-96 dark:border-gray-700 dark:bg-gray-800">
+        <div className="flex flex-col p-4 items-center bg-cyan-800 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-96 dark:border-gray-700 dark:bg-gray-800">
           <div class="content">
             <h3 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Adoptons MEDDoC !</h3>
             <p className="m-auto text-white">
@@ -39,12 +46,12 @@ export default function Whyus() {
         </div>
 
         {items.map((item) => (
-          <div key={item.id} class="flex flex-col p-4 bg-white  border border-gray-200 rounded-lg shadow  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ">
-            <img src={doctor} className="w-16 m-auto mb-4" alt="doctor_profil"></img>
-            <Link to={item.link} class="mb-4 text-xl m-auto font-bold tracking-tight text-gray-900 dark:text-white">
+          <Link to={item.link} key={item.id} class="flex flex-col p-4 bg-white border border-gray-200 rounded-lg  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ">
+            <img src={item.img} className="w-16 m-auto mb-4" alt="doctor_profil"></img>
+            <div class="mb-4 text-xl m-auto font-bold tracking-tight text-gray-900 dark:text-white">
               <h5>{item.title}</h5>
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
 
 

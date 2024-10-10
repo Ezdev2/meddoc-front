@@ -8,7 +8,11 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "var(--color-primary)",
+      }
+    },
   },
   plugins: [  require('flowbite/plugin')({
     charts: true,

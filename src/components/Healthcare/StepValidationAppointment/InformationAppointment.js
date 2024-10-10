@@ -245,7 +245,7 @@ export const Prescriptons = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubm
                                                 </div>
                                                 <div className="flex justify-center">
                                                     <button
-                                                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                                        className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800"
                                                         type='submit'
                                                     >
                                                         Ajouter
@@ -293,7 +293,7 @@ export const Prescriptons = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubm
 
                             </div>
                             <div className="flex items-center">
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -355,7 +355,7 @@ export const NotesAdditionnels = ({ tempItems, openFormAdd, openAdd, closeAdd, o
                             autoComplete="off">
                             <Input {...notes_validation} />
                             <div className="flex items-center">
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -619,7 +619,7 @@ export const RaisonduVisite = ({ tempItems, openFormAdd, openAdd, closeAdd, onsu
                                             </div>
                                             <div className="flex justify-center">
                                                 <button
-                                                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                                    className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800"
                                                     type='submit'
                                                 >
                                                     Ajouter
@@ -632,7 +632,7 @@ export const RaisonduVisite = ({ tempItems, openFormAdd, openAdd, closeAdd, onsu
                             </Modal>
 
                             <div className="flex items-center">
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>

@@ -98,7 +98,7 @@ export default function HealthcareAppointments() {
             case 'appointment':
                 return 'bg-blue-500';
             case 'total':
-                return 'bg-blue-700';
+                return 'bg-primary';
             case 'canceled':
                 return 'bg-gray-500';
             case 'waiting':

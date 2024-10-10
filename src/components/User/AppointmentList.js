@@ -136,7 +136,7 @@ export default function Appointments() {
                 confirmButtonText: "Accepter",
                 customClass: {
                     cancelButton: 'mx-4 text-white inline-flex items-center bg-red-400 hover:bg-red-400 focus:ring-2 focus:outline-none focus:ring-red-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
-                    confirmButton: 'mx-4 text-white inline-flex items-center bg-blue-700 hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
+                    confirmButton: 'mx-4 text-white inline-flex items-center bg-primary hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
                 },
 
             }).then(async (result) => {
@@ -224,7 +224,7 @@ export default function Appointments() {
             case 'appointment':
                 return 'bg-blue-500';
             case 'total':
-                return 'bg-blue-700';
+                return 'bg-primary';
             case 'canceled':
                 return 'bg-gray-500';
             case 'waiting':

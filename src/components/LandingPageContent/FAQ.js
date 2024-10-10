@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-const FAQ1="En savoir plus sur MEDDoC ?";
-const Response1 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-const FAQ2="Qu’est ce que la télémédecine ?";
-const Response2 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-const FAQ3="Comment et où sont stockées nos données?";
-const Response3 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-const FAQ4="Comment marche le site ?";
-const Response4 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+const FAQ1 = "En savoir plus sur MEDDoC ?";
+const Response1 = "That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+const FAQ2 = "Qu’est ce que la télémédecine ?";
+const Response2 = "That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+const FAQ3 = "Comment et où sont stockées nos données?";
+const Response3 = "That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+const FAQ4 = "Comment marche le site ?";
+const Response4 = "That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
 
 
 
@@ -21,10 +21,10 @@ const Accordion = () => {
                 FAQ
               </span>
               <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
-              Questions fréquentes
+                Questions fréquentes
               </h2>
               <p className="text-base text-body-color">
-                Ces questions blabla.....
+                Découvrez les réponses aux questions les plus fréquentes concernant nos services. Que vous soyez un nouvel utilisateur ou un client fidèle, cette section est conçue pour vous aider à trouver rapidement les informations dont vous avez besoin.
               </p>
             </div>
           </div>
@@ -37,8 +37,8 @@ const Accordion = () => {
               text={Response1}
             />
             <AccordionItem
-             header={FAQ2}
-             text={Response2}
+              header={FAQ2}
+              text={Response2}
             />
             {/* <AccordionItem
               header="How long we deliver your first blog post?"
@@ -51,10 +51,10 @@ const Accordion = () => {
               text={Response3}
             />
             <AccordionItem
-                    header={FAQ4}
-                    text={Response4}
+              header={FAQ4}
+              text={Response4}
             />
-           
+
           </div>
         </div>
       </div>
@@ -108,9 +108,8 @@ const AccordionItem = ({ header, text }) => {
       >
         <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary  ">
           <svg
-            className={`duration-200 ease-in-out fill-primary stroke-primary ${
-              active ? "rotate-180" : ""
-            }`}
+            className={`duration-200 ease-in-out fill-primary stroke-primary ${active ? "rotate-180" : ""
+              }`}
             width="17"
             height="10"
             viewBox="0 0 17 10"
@@ -130,9 +129,8 @@ const AccordionItem = ({ header, text }) => {
       </button>
 
       <div
-        className={`pl-[62px] duration-200 ease-in-out ${
-          active ? "block" : "hidden"
-        }`}
+        className={`pl-[62px] duration-200 ease-in-out ${active ? "block" : "hidden"
+          }`}
       >
         <p className="py-3 text-base leading-relaxed text-body-color">{text}</p>
       </div>

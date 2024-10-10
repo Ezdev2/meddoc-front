@@ -235,7 +235,7 @@ export function ValidateAppointment() {
                 confirmButtonText: "Valider",
                 customClass: {
                     cancelButton: 'mx-4 text-white inline-flex items-center bg-red-500 hover:bg-red-600 focus:ring-2 focus:outline-none focus:ring-red-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
-                    confirmButton: 'mx-4 text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
+                    confirmButton: 'mx-4 text-white inline-flex items-center bg-primary hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
                 },
 
             }).then(async (result) => {

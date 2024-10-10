@@ -119,6 +119,7 @@ function App() {
               {/* USER */}
               <Route element={<RequireAuth allowedRoles={[ROLES.Patient]} />}>
                 <Route path="/user" element={<Layoutconnected />} >
+                {/* <Route path="/user" element={<Layout />} > */}
                   <Route index element={<UserHero />}></Route>
                   <Route path='appointment' element={<Appointments />}></Route>
                   <Route path='medical_history_book' element={<BookHealth />}></Route>

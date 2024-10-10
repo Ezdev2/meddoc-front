@@ -1,5 +1,5 @@
 import doctor_illustration from '../../assets/illustration/doctor_help.png';
-import doctor from "../../assets/image/doctor.svg"
+import idea from "../../assets/image/idea.svg"
 
 const items = [
   {
@@ -44,17 +44,19 @@ export default function About() {
 
           <br></br>
 
-          {items.map((item) => (
-            <div key={item.id} className="flex content-center m-4">
-              <img src={doctor} className='w-20 mx-4' alt="Doctor" />
-              <div>
-                <h4 className="text-lg font-semibold my-2">
-                  <a href="#">{item.title}</a>
-                </h4>
-                <p className="description">{item.description}</p>
+          <div className='flex flex-col gap-4'>
+            {items.map((item) => (
+              <div key={item.id} className="flex content-center rounded-[18px] border p-4">
+                <img src={idea} className='w-20 mx-4' alt="Doctor" />
+                <div>
+                  <h4 className="text-lg font-bold my-2">
+                    <a href="#">{item.title}</a>
+                  </h4>
+                  <p className="description">{item.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
 
 

@@ -347,7 +347,7 @@ export function SummaryHealthcare({ healthcare_profil }) {
 
 
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
-            {/* {!match && (<a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center uppercase text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            {/* {!match && (<a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center uppercase text-white bg-primary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800">
                 <svg class="w-4 h-4 mr-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v3m5-3v3m5-3v3M1 7h18M5 11h10M2 3h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
                 </svg>

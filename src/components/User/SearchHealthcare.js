@@ -4,7 +4,7 @@ import axios, { axiosPrivate, axiosSearch } from "../../api/axios";
 
 import doctor_portrait from "../../assets/image/doctor_portrait.jpg"
 import { Link, redirect, useNavigate } from 'react-router-dom';
-
+import noData from "../../assets/illustration/no-data.svg";
 
 import {
     add,
@@ -377,7 +377,7 @@ function Searchhealthcare({ searchQuery, searchQueryWhere }) {
                 confirmButtonText: "Accepter",
                 customClass: {
                     cancelButton: 'mx-4 text-white inline-flex items-center bg-red-400 hover:bg-red-400 focus:ring-2 focus:outline-none focus:ring-red-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
-                    confirmButton: 'mx-4 text-white inline-flex items-center bg-blue-700 hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
+                    confirmButton: 'mx-4 text-white inline-flex items-center bg-primary hover:bg-primary-800 focus:ring-2 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800',
                 },
 
             }).then(async (result) => {
@@ -443,9 +443,9 @@ function Searchhealthcare({ searchQuery, searchQueryWhere }) {
         <>
             {
                 isLoading ? (
-                    <div className="sm:ml-64">
+                    <div className=" h-[60px]">
 
-                        <div className="flex flex-col items-center justify-center ">
+                        <div className="flex flex-col items-center justify-center">
                             <Loaderpulse>
                             </Loaderpulse>
                         </div>
@@ -687,11 +687,11 @@ function Searchhealthcare({ searchQuery, searchQueryWhere }) {
                         </>
                     )
                     : (
-                        <div className="sm:ml-64">
+                        <div className="h-[60vh]">
 
-                            <div className="flex flex-col items-center justify-center ">
-                                <p>Aucun donnée ne correspond aux termes de recherche spécifiés </p>
-
+                            <div className="flex flex-col items-center justify-center pt-8 ml-[200px]">
+                                <img src={noData} alt="" />
+                                <p className="text-black-200">Aucune donnée ne correspond aux termes de recherche spécifiés.</p>
                             </div>
                         </div>
                     )

@@ -27,7 +27,7 @@ export const Tarifs = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, me
 
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -102,7 +102,7 @@ export const Experiences = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmi
 
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -185,7 +185,7 @@ export const Diplome = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, m
                             <Input {...diplome_validation} />
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -255,7 +255,7 @@ export const Keywords = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, 
                             <Input {...keywordvalidation} />
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-primary text-white font-bold py-2 px-4 rounded'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>

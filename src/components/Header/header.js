@@ -40,7 +40,7 @@ export default function Header() {
     {
       title_text: "Se connecter",
       link: "login",
-      className: "text-white bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+      className: "text-white bg-primary hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
 
     },
     {
@@ -61,7 +61,7 @@ export default function Header() {
             <img src={logo} alt='Medoc Logo'></img>
 
             {location.pathname === '/healthcare_sign_up' && (
-              <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">PRO</span>
+              <span className="bg-blue-100 text-primary text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-primary">PRO</span>
             )}
 
           </Link>
